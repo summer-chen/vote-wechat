@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试登录</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+</head>
+<body>
+
+<div class="weui_msg hide" id="msg2">
+    <div class="weui_icon_area"><i class="weui_icon_warn weui_icon_msg"></i></div>
+    <div class="weui_text_area">
+        <h2 class="weui_msg_title">登陆超时</h2>
+        <p class="weui_msg_desc">请重新登陆</p>
+    </div>
+</div>
+
+
+
+</body>
+    <script type="text/javascript">
+       /* var url = document.URL;
+        var firstindex = url.indexOf("=");
+        var lastindex = url.indexOf("&");
+        var code = url.substring(firstindex+1,lastindex);
+        var data = {
+            code:code
+        };
+        $.get("http://summer.tunnel.qydev.com/vote/index.php/Home/Index/login",data,function(result){
+            if(result.serviceResult == 1){
+                $.showLoading();
+                setTimeout(function() {
+                    $.hideLoading();
+                }, 3000);
+                /!*alert(window.shareUrl);
+                if(window.shareUrl){
+                    window.location.href = 'window.shareUrl';
+                }else {
+                    window.location.href='index.html';
+                }*!/
+
+            }
+            if(result.serviceResult == 0){
+                $('#msg2').fadeIn();
+                alert("登录失败,请重试");
+            }
+        },'json')*/
+    </script>
+</html>

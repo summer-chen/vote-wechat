@@ -1,0 +1,94 @@
+<layout name="layout" />
+
+<!--main-container-part-->
+<div id="content">
+    <!--breadcrumbs-->
+    <div id="content-header">
+        <div id="breadcrumb"> <a href="#" class="tip-bottom"><i class="icon-home"></i> 支持记录</a></div>
+    </div>
+    <!--End-breadcrumbs-->
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="widget-box">
+                    <div class="widget-content nopadding">
+                        <table class="table table-bordered data-table">
+                            <thead>
+                            <tr>
+                                <th>姓名</th>
+                                <th>年龄</th>
+                                <th>身高</th>
+                                <th>体重</th>
+                                <th>职业</th>
+                                <th>手机号码</th>
+                                <th>电子邮件</th>
+                                <th width="13%">操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <?php foreach($data as $k=>$v): ?>
+                                <tr id="row<?php echo $v['cid']; ?>">
+                                    <td><?php echo $v['name']; ?></td>
+                                    <td><?php echo $v['age']; ?></td>
+                                    <td><?php echo $v['height']; ?></td>
+                                    <td><?php echo $v['weight']; ?></td>
+                                    <td><?php echo $v['job']; ?></td>
+                                    <td><?php echo $v['telphone']; ?></td>
+                                    <td><?php echo $v['email']; ?></td>
+                                    <td>
+                                        <a class='btn btn-primary' data-toggle='modal' data-target='#myModal' onclick="record('<?php echo $v['cid']; ?>')">查看支持记录</a>
+                                    </td>
+                                </tr>
+                                <?php endforeach; ?>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div id="mypage" class="dataTables_paginate">
+                        <?php echo $page; ?>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal hide fade" id="myModal" tabindex="-1" role="dialog" style="width: 1000px; margin-left:-500px">
+        <div class="modal-header"><button class="close" type="button" data-dismiss="modal">×</button>
+            <h3 id="myModalLabel">Modal header</h3>
+        </div>
+        <div class="modal-body" >
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span12">
+                        <div class="widget-box">
+                            <div class="widget-content nopadding">
+                                <form id="carousel">
+                                    <table id="record_table" class="table table-bordered data-table">
+                                    </table>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div id="pagerArea" unselectable="on" onselectstart="return false;" style="-moz-user-select:none;"></div>
+        </div>
+    </div>
+
+</div>
+
+<!--end-main-container-part-->
+<script type="text/javascript" src="__PUBLIC__/Admin/script/jquery-1.7.1.min.js" ></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/script/competitor.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/script/cypager.min.js" ></script>
+<script><!--
+$(function(){
+    $("#pagerArea").cypager({pg_size:10,pg_nav_count:5,pg_total_count:194,pg_call_fun:function(count){
+        alert(count);
+    }});
+});
+--></script>

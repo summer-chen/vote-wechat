@@ -1,0 +1,61 @@
+<layout name="layout" />
+
+<!--main-container-part-->
+<div id="content">
+    <!--breadcrumbs-->
+    <div id="content-header">
+        <div id="breadcrumb"> <a href="#" class="tip-bottom"><i class="icon-home"></i> 选手审核</a></div>
+    </div>
+    <!--End-breadcrumbs-->
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="widget-box">
+                    <div class="widget-content nopadding">
+                        <table class="table table-bordered data-table">
+                            <thead>
+                            <tr>
+                                <th>姓名</th>
+                                <th>年龄</th>
+                                <th>身高</th>
+                                <th>体重</th>
+                                <th>职业</th>
+                                <th>手机号码</th>
+                                <th>电子邮件</th>
+                                <th width="28%">操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <?php foreach($data as $k=>$v): ?>
+                                <tr id="row<?php echo $v['cid']; ?>">
+                                    <td><?php echo $v['name']; ?></td>
+                                    <td><?php echo $v['age']; ?></td>
+                                    <td><?php echo $v['height']; ?></td>
+                                    <td><?php echo $v['weight']; ?></td>
+                                    <td><?php echo $v['job']; ?></td>
+                                    <td><?php echo $v['telphone']; ?></td>
+                                    <td><?php echo $v['email']; ?></td>
+                                    <td>
+                                        <a class='btn btn-primary' onclick="check(<?php echo $v['cid']; ?>)">通过审核</a>
+                                        <a class='btn btn-primary' onclick="deletecompetitor(<?php echo $v['cid']; ?>)">删除该选手</a>
+                                        <a class='btn btn-primary' onclick="showimage(<?php echo $v['cid']; ?>)">查看图片</a>
+                                    </td>
+                                </tr>
+                                <?php endforeach; ?>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div id="mypage" class="dataTables_paginate">
+                        <?php echo $page; ?>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--end-main-container-part-->
+<script type="text/javascript" src="__PUBLIC__/Admin/script/competitor.js"></script>

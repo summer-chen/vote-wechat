@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试登录</title>
+</head>
+<body>
+    登录中...
+</body>
+    <script src="./Public/Admin/js/jquery.min.js"></script>
+    <script type="text/javascript">
+        var url = document.URL;
+        var firstindex = url.indexOf("=");
+        var lastindex = url.indexOf("&");
+        var code = url.substring(firstindex+1,lastindex);
+        var data = {
+            code:code
+        };
+        $.get("http://l-chuzhou.cn/vote/index.php/Home/Index/login",data,function(result){
+            if(result.serviceResult == 1){
+                alert(result.resultinfo);
+            }
+        },'json')
+    </script>
+</html>

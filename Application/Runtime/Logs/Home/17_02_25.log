@@ -1,0 +1,624 @@
+[ 2017-02-25T10:09:02+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/mien
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `v_competitor` [ RunTime:0.0520s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_competitor` WHERE `is_pass` = 1 AND `is_delete` = 0 AND `name` LIKE '%gakki%' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_competitor` WHERE `is_pass` = 1 AND `is_delete` = 0 AND `name` LIKE '%gakki%' ORDER BY cid desc LIMIT 0,6   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-25T10:16:24+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/mien
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `v_competitor` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_competitor` WHERE `is_pass` = 1 AND `is_delete` = 0 AND `name` LIKE '%gakki%' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_competitor` WHERE `is_pass` = 1 AND `is_delete` = 0 AND `name` LIKE '%gakki%' ORDER BY cid desc LIMIT 0,6   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-25T10:16:31+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/mien
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_competitor` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_competitor` WHERE `is_pass` = 1 AND `is_delete` = 0 AND `name` LIKE '%gakki2%' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_competitor` WHERE `is_pass` = 1 AND `is_delete` = 0 AND `name` LIKE '%gakki2%' ORDER BY cid desc LIMIT 0,6   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-25T10:20:31+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-25T10:20:45+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_competitor` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `v_competitor` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-25T14:50:33+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-25T14:50:42+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-25T15:09:42+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_competitor` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `v_count` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_count` WHERE `competitor` = '1' AND `present` = 1 LIMIT 1   [ RunTime:0.1820s ]
+SQL: INSERT INTO `v_count` (`competitor`,`present`,`count`) VALUES ('1','1','1') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0030s ]
+SQL: INSERT INTO `v_record` (`cid`,`pid`,`uid`,`time`) VALUES ('1','1','1','2017-02-25 15:09:42') [ RunTime:0.0530s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-02-25T16:01:07+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = '1' AND `pid` = 1 AND `uid` = 1 AND `time` = '2017-02-25' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_competitor` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `v_count` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_count` WHERE `competitor` = '1' AND `present` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `v_count` SET `count`=count+1 WHERE `competitor` = '1' AND `present` = 1 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-25T16:01:38+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = '1' AND `pid` = 1 AND `uid` = 1 AND `time` = '2017-02-25' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_competitor` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `v_count` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_count` WHERE `competitor` = '1' AND `present` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `v_count` SET `count`=count+1 WHERE `competitor` = '1' AND `present` = 1 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-25T16:02:03+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = '1' AND `pid` = 1 AND `uid` = 1 AND `time` = '2017-02-25' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_competitor` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `v_count` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_count` WHERE `competitor` = '1' AND `present` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `v_count` SET `count`=count+1 WHERE `competitor` = '1' AND `present` = 1 [ RunTime:0.0000s ]
+ERR: 
+
+[ 2017-02-25T16:02:50+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = '1' AND `pid` = 1 AND `uid` = 1 AND `time` = '2017-02-25' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_competitor` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `v_count` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_count` WHERE `competitor` = '1' AND `present` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `v_count` SET `count`=count+1 WHERE `competitor` = '1' AND `present` = 1 [ RunTime:0.0000s ]
+SQL: INSERT INTO `v_record` (`cid`,`pid`,`uid`,`time`) VALUES ('1','1','1','2017-02-25') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-25T16:03:16+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = '1' AND `pid` = 1 AND `uid` = 1 AND `time` = '2017-02-25' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_competitor` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `v_count` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_count` WHERE `competitor` = '1' AND `present` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `v_count` SET `count`=count+1 WHERE `competitor` = '1' AND `present` = 1 [ RunTime:0.0010s ]
+SQL: INSERT INTO `v_record` (`cid`,`pid`,`uid`,`time`) VALUES ('1','1','1','2017-02-25') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-25T16:03:18+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = '1' AND `pid` = 1 AND `uid` = 1 AND `time` = '2017-02-25' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_competitor` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `v_count` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_count` WHERE `competitor` = '1' AND `present` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `v_count` SET `count`=count+1 WHERE `competitor` = '1' AND `present` = 1 [ RunTime:0.0000s ]
+SQL: INSERT INTO `v_record` (`cid`,`pid`,`uid`,`time`) VALUES ('1','1','1','2017-02-25') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-25T16:03:20+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = '1' AND `pid` = 1 AND `uid` = 1 AND `time` = '2017-02-25' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_competitor` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `v_count` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_count` WHERE `competitor` = '1' AND `present` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `v_count` SET `count`=count+1 WHERE `competitor` = '1' AND `present` = 1 [ RunTime:0.0000s ]
+SQL: INSERT INTO `v_record` (`cid`,`pid`,`uid`,`time`) VALUES ('1','1','1','2017-02-25') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-25T16:03:21+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = '1' AND `pid` = 1 AND `uid` = 1 AND `time` = '2017-02-25' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_competitor` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `v_count` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_count` WHERE `competitor` = '1' AND `present` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `v_count` SET `count`=count+1 WHERE `competitor` = '1' AND `present` = 1 [ RunTime:0.0000s ]
+SQL: INSERT INTO `v_record` (`cid`,`pid`,`uid`,`time`) VALUES ('1','1','1','2017-02-25') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-02-25T16:03:22+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = '1' AND `pid` = 1 AND `uid` = 1 AND `time` = '2017-02-25' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_competitor` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `v_count` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_count` WHERE `competitor` = '1' AND `present` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `v_count` SET `count`=count+1 WHERE `competitor` = '1' AND `present` = 1 [ RunTime:0.0010s ]
+SQL: INSERT INTO `v_record` (`cid`,`pid`,`uid`,`time`) VALUES ('1','1','1','2017-02-25') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-25T16:03:23+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = '1' AND `pid` = 1 AND `uid` = 1 AND `time` = '2017-02-25' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_competitor` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `v_count` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_count` WHERE `competitor` = '1' AND `present` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `v_count` SET `count`=count+1 WHERE `competitor` = '1' AND `present` = 1 [ RunTime:0.0000s ]
+SQL: INSERT INTO `v_record` (`cid`,`pid`,`uid`,`time`) VALUES ('1','1','1','2017-02-25') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-25T16:03:26+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = '1' AND `pid` = 1 AND `uid` = 1 AND `time` = '2017-02-25' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-25T16:03:37+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = '1' AND `pid` = 1 AND `uid` = 1 AND `time` = '2017-02-25' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-25T16:04:25+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = '1' AND `pid` = 1 AND `uid` = 1 AND `time` = '2017-02-25' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_competitor` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `v_count` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_count` WHERE `competitor` = '1' AND `present` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `v_count` (`competitor`,`present`,`count`) VALUES ('1','1','1') [ RunTime:0.0000s ]
+SQL: INSERT INTO `v_record` (`cid`,`pid`,`uid`,`time`) VALUES ('1','1','1','2017-02-25') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-25T16:04:26+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = '1' AND `pid` = 1 AND `uid` = 1 AND `time` = '2017-02-25' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_competitor` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `v_count` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_count` WHERE `competitor` = '1' AND `present` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `v_count` SET `count`=count+1 WHERE `competitor` = '1' AND `present` = 1 [ RunTime:0.0000s ]
+SQL: INSERT INTO `v_record` (`cid`,`pid`,`uid`,`time`) VALUES ('1','1','1','2017-02-25') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-25T16:04:27+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = '1' AND `pid` = 1 AND `uid` = 1 AND `time` = '2017-02-25' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_competitor` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `v_count` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_count` WHERE `competitor` = '1' AND `present` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `v_count` SET `count`=count+1 WHERE `competitor` = '1' AND `present` = 1 [ RunTime:0.0000s ]
+SQL: INSERT INTO `v_record` (`cid`,`pid`,`uid`,`time`) VALUES ('1','1','1','2017-02-25') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-25T16:04:28+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = '1' AND `pid` = 1 AND `uid` = 1 AND `time` = '2017-02-25' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_competitor` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `v_count` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_count` WHERE `competitor` = '1' AND `present` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `v_count` SET `count`=count+1 WHERE `competitor` = '1' AND `present` = 1 [ RunTime:0.0000s ]
+SQL: INSERT INTO `v_record` (`cid`,`pid`,`uid`,`time`) VALUES ('1','1','1','2017-02-25') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-25T16:04:29+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = '1' AND `pid` = 1 AND `uid` = 1 AND `time` = '2017-02-25' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_competitor` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `v_count` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_count` WHERE `competitor` = '1' AND `present` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `v_count` SET `count`=count+1 WHERE `competitor` = '1' AND `present` = 1 [ RunTime:0.0000s ]
+SQL: INSERT INTO `v_record` (`cid`,`pid`,`uid`,`time`) VALUES ('1','1','1','2017-02-25') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-25T16:04:30+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = '1' AND `pid` = 1 AND `uid` = 1 AND `time` = '2017-02-25' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_competitor` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `v_count` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_count` WHERE `competitor` = '1' AND `present` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `v_count` SET `count`=count+1 WHERE `competitor` = '1' AND `present` = 1 [ RunTime:0.0000s ]
+SQL: INSERT INTO `v_record` (`cid`,`pid`,`uid`,`time`) VALUES ('1','1','1','2017-02-25') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-25T16:04:31+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = '1' AND `pid` = 1 AND `uid` = 1 AND `time` = '2017-02-25' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-25T16:04:31+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = '1' AND `pid` = 1 AND `uid` = 1 AND `time` = '2017-02-25' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-02-25T16:04:32+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = '1' AND `pid` = 1 AND `uid` = 1 AND `time` = '2017-02-25' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-02-25T16:04:32+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = '1' AND `pid` = 1 AND `uid` = 1 AND `time` = '2017-02-25' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-25T16:04:33+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = '1' AND `pid` = 1 AND `uid` = 1 AND `time` = '2017-02-25' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-02-25T16:04:33+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = '1' AND `pid` = 1 AND `uid` = 1 AND `time` = '2017-02-25' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-25T16:04:33+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = '1' AND `pid` = 1 AND `uid` = 1 AND `time` = '2017-02-25' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-25T16:04:34+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = '1' AND `pid` = 1 AND `uid` = 1 AND `time` = '2017-02-25' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-02-25T16:04:35+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = '1' AND `pid` = 1 AND `uid` = 1 AND `time` = '2017-02-25' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-02-25T16:04:35+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = '1' AND `pid` = 1 AND `uid` = 1 AND `time` = '2017-02-25' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-25T16:04:35+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = '1' AND `pid` = 1 AND `uid` = 1 AND `time` = '2017-02-25' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-02-25T16:04:36+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = '1' AND `pid` = 1 AND `uid` = 1 AND `time` = '2017-02-25' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-02-25T16:04:36+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = '1' AND `pid` = 1 AND `uid` = 1 AND `time` = '2017-02-25' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-25T16:04:36+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = '1' AND `pid` = 1 AND `uid` = 1 AND `time` = '2017-02-25' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-25T16:04:37+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = '1' AND `pid` = 1 AND `uid` = 1 AND `time` = '2017-02-25' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-25T16:04:37+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = '1' AND `pid` = 1 AND `uid` = 1 AND `time` = '2017-02-25' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-25T17:13:16+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/record
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_competitor` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CompetitorModel::record(), called in F:\website\vote\Application\Home\Controller\CompetitorController.class.php on line 154 and defined F:\website\vote\Application\Home\Model\CompetitorModel.class.php 第 102 行.
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined variable: cid F:\website\vote\Application\Home\Model\CompetitorModel.class.php 第 107 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = null LIMIT 1   [ RunTime:0.0010s ]
+ERR: 1064:Erreur de syntaxe près de 'dec LIMIT 0,6' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `v_record` WHERE `cid` = null ORDER BY rid dec LIMIT 0,6  
+ERR: 1064:Erreur de syntaxe près de 'dec LIMIT 0,6' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `v_record` WHERE `cid` = null ORDER BY rid dec LIMIT 0,6  
+
+[ 2017-02-25T17:13:44+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/record
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_competitor` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = '1' LIMIT 1   [ RunTime:0.0010s ]
+ERR: 1064:Erreur de syntaxe près de 'dec LIMIT 0,6' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `v_record` WHERE `cid` = '1' ORDER BY rid dec LIMIT 0,6  
+ERR: 1064:Erreur de syntaxe près de 'dec LIMIT 0,6' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `v_record` WHERE `cid` = '1' ORDER BY rid dec LIMIT 0,6  
+
+[ 2017-02-25T17:13:57+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/record
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_competitor` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_record` WHERE `cid` = '1' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `v_record` WHERE `cid` = '1' ORDER BY rid desc LIMIT 0,6   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-25T17:17:59+08:00 ] 127.0.0.1 /vote/index.php/Home/Competitor/record
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `v_competitor` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `v_record` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM v_record a WHERE a.cid = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT b.headimg,b.username,c.name,a.time FROM v_record a left join v_user b on a.uid=b.uid left join v_present c on a.pid=c.pid  WHERE a.cid = '1' ORDER BY rid desc LIMIT 0,6   [ RunTime:0.2910s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+
+</head>
+<body>
+<div class="content">
+    <form class="weui_cells weui_cells_form" name="myForm" novalidate>
+
+        <div class="weui_cell">
+            <div class="weui_cell_bd weui_cell_primary">
+                <div class="weui_uploader">
+                    <div class="weui_uploader_hd weui_cell">
+                        <div class="weui_cell_bd weui_cell_primary">请选择图片</div>
+                        <div class="weui_cell_ft">最多八张</div>
+                    </div>
+                    <div class="weui_uploader_bd">
+                        <ul class="weui_uploader_files" id="showImage">
+
+                        </ul>
+                        <div class="weui_uploader_input_wrp">
+                            <input class="weui_uploader_input" type=button" ng-click="chooseImage()" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-bd-15">
+            <button type="submit" ng-click="wxuploadImage()" id="picDisable" disabled="disabled" class="weui_btn weui_btn_primary">提交</button>
+        </div>
+    </form>
+</div>
+
+
+</body>
+</html>

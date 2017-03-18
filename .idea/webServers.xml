@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="1ddc035f-c3e5-4d51-9f6b-2ede012d6270" name="gakki" url="http://119.29.109.176">
+        <fileTransfer host="119.29.109.176" port="21212" rootFolder="/usr/local/apache/htdocs" accessType="SFTP" password="dfcddfcbdfc1dfc1dfc3df98df9adf9adf9ddfeadfdbdfdbdf84dfc9dfc5dfc7" username="root">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

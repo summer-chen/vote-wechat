@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>排行榜</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+
+
+</head>
+<body>
+
+
+<div class="weui_panel weui_panel_access">
+    <div class="weui_panel_hd">排行榜</div>
+
+    <div class="weui_cell weui_cell_select weui_select_after weui_cell_select1">
+        <div class="weui_cell_hd">
+            <label class="weui_label">选择赛区</label>
+        </div>
+        <div class="weui_cell_bd weui_cell_primary">
+            <select class="weui_select" name="select2" ng-model="showLocation" ng-change="getInfo(showLocation)">
+                <option ng-repeat="location in locations" value="{{location.lid}}">{{location.name}}</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="weui_panel_bd" infinite-scroll='classifyList.nextPage()' infinite-scroll-disabled='classifyList.busy' infinite-scroll-distance='0'>
+        <div class="ranklist" ng-repeat="info in classifyList.items">
+            <a href="index.html#/people/{{info.cid}}" class="weui_media_box weui_media_appmsg">
+                <div class="weui_media_hd">
+                   <!-- <img class="weui_media_appmsg_thumb"  src="{{info.imageurl}}" alt="">-->
+                    <ul>
+                        <li class="weui_uploader_file width60" style="background-image:url({{info.imageurl}})"></li>
+
+                    </ul>
+                </div>
+                <div class="weui_media_bd">
+                    <h4 class="weui_media_title" ng-bind="info.name"> &nbsp;&nbsp;&nbsp;<small>(000001)</small></h4>
+                    <p class="weui_media_desc" ng-bind="info.family"></p>
+                </div>
+            </a>
+            <div class="page-bd">
+                <div class="weui-flex">
+                    <div class="weui-flex-item">
+                        <div class="placeholder">
+                            <img src="img/heart.png" alt=""><span ng-bind="info.vote"></span>
+                        </div>
+                    </div>
+                    <div class="weui-flex-item">
+                        <div class="placeholder">
+                            <img src="img/crown_royal.png" alt=""><span ng-bind="info.crown"></span>
+                        </div>
+                    </div>
+                    <div class="weui-flex-item">
+                        <div class="placeholder">
+                            <img src="img/flower.png" alt=""><span ng-bind="info.flower"></span>
+                        </div>
+                    </div>
+                    <div class="weui-flex-item">
+                        <div class="placeholder">
+                            <img src="img/lip04.png" alt=""><span ng-bind="info.kiss"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+        </div>
+        <div class="loading" ng-show="classify.busy">
+             <img src="img/loading.gif"/> 
+                加载中...
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<layout name="layout" />
+
+<!--main-container-part-->
+<div id="content">
+    <!--breadcrumbs-->
+    <div id="content-header">
+        <div id="breadcrumb"> <a href="#" class="tip-bottom"><i class="icon-home"></i> 添加轮播图</a></div>
+    </div>
+    <!--End-breadcrumbs-->
+
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="widget-box">
+                    <div class="widget-content nopadding">
+                        <form id="carousel">
+                            <table class="table table-bordered data-table">
+                                <tr>
+                                    <td>轮播图图片:</td>
+                                </tr>
+                                <tr>
+                                    <td><img id="avatar" class="avatar" src="__PUBLIC__/Admin/img/back.png" /></td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="controls controls1">
+                                            <button class="btn btn-defaults" id="changeAvatar" data-toggle="modal" data-target="#myAvatar">修改图片</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>轮播图内容:</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <script id="carousel_content" name="content" type="text/plain"></script>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="javascript:add()" class="btn btn-success">提交</a></td>
+                                </tr>
+                           </table>
+                            <div class="modal fade" id="myAvatar" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×
+                                            </button>
+                                            <h4 class="modal-title" id="myModalLabel" >
+                                                修改头像
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="picContainer">
+                                                <div class="imageBox">
+                                                    <div class="thumbBox"></div>
+                                                    <div class="spinner" style="display: none">Loading...</div>
+                                                </div>
+                                                <div class="action">
+                                                    <!-- <input type="file" id="file" style=" width: 200px">-->
+                                                    <div class="new-contentarea tc">
+                                                        <a href="javascript:void(0)">
+                                                            <label for="upload-file"><button type="button" class="btn btn-default" >上传图片</button></label>
+                                                        </a>
+                                                        <input type="file" class="" name="upload-file" id="upload-file" />
+                                                    </div>
+
+                                                    <button type="button" id="btnZoomIn" class="btn btn-default btnZoomIn">放大</button>
+                                                    <button type="button" id="btnZoomOut" class="btn btn-default btnZoomOut">缩小</button>
+                                                    <button type="button" id="btnCrop" class="btn btn-default" data-dismiss="modal">确定</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- /.modal-content -->
+                                </div><!-- /.modal-dialog -->
+                            </div><!-- /.modal -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var arr = null;
+    $(window).load(function () {
+
+            var options = {
+                thumbBox: '.thumbBox',
+                spinner: '.spinner',
+                imgSrc: '__PUBLIC__/Admin/img/avatar.png'
+            };
+            var cropper = $('.imageBox').cropbox(options);
+            $('#upload-file').on('change', function() {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    options.imgSrc = e.target.result;
+                    cropper = $('.imageBox').cropbox(options);
+                };
+                reader.readAsDataURL(this.files[0]);
+                this.files = [];
+            });
+            $('#btnCrop').on('click', function() {
+                var img = cropper.getDataURL();
+                $('.cropped').html('');
+                $('#avatar').attr("src", img);
+                var pos = img.indexOf("base64")+7;
+                img = img.substring(pos, img.length);
+                mypicture = img;
+
+                arr = img;
+            });
+            $('#btnZoomIn').on('click', function() {
+                cropper.zoomIn();
+            });
+            $('#btnZoomOut').on('click', function() {
+                cropper.zoomOut();
+            })
+    })
+</script>
+
+<!--end-main-container-part-->
+<!-- 富文本框  -->
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/ueditor.all.min.js"> </script>
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/lang/zh-cn/zh-cn.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/script/carousel.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/js/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/js/base64.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Admin/js/cropbox.js"></script>

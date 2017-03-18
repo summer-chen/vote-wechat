@@ -1,0 +1,45 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en" class="login-bg">
+
+<head>
+    <title>后台管理系统</title><meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/vote/Public/Admin/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/vote/Public/Admin/css/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" href="/vote/Public/Admin/css/signin.css" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body>
+
+
+
+<div class="row-fluid login-wrapper">
+
+    <div class=" box" >
+        <form id="mylogin" onsubmit="return false;">
+            <div class="content-wrap">
+                <input class="span12" name="adminname" type="text" placeholder="用户名" />
+                <input class="span12" name="adminpass" type="password" placeholder="密码" />
+
+                <input class="span6 pull-left" name="code" type="text" placeholder="验证码" />
+
+                <img id="codeimg" onclick="this.src='<?php echo U('Login/getcode'); ?>?time='+Math.random()" class=" pic span5 pull-right" src="<?php echo U('Login/getcode'); ?>"/>
+
+                <div style="text-align: center;">
+                    <button class="btn-glow primary login" onclick="login('<?php echo U('Login/login',0,false) ?>')">登录</button>
+
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<script src="/vote/Public/Admin/js/jquery.min.js"></script>
+<script src="/vote/Public/Admin/layer/layer/layer.js"></script>
+<script src="/vote/Public/Admin/js/matrix.login.js"></script>
+<script src="/vote/Public/Admin/script/login.js"></script>
+</body>
+
+</html>

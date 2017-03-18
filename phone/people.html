@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>排行榜</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+</head>
+
+<body style="padding: 0px 10px">
+
+    <div class="headimg">
+        <div class="width100 weui_uploader_file"  style="background-image:url({{headimage}})"></div>
+        <div class="name"><span ng-bind="info.name" ></span></div>
+        <div class="clear">
+        </div>
+    </div>
+
+    <div class="weui-form-preview">
+        <div class="weui-form-preview-bd">
+
+            <p>
+                <label class="weui-form-preview-label">年龄</label>
+                <span class="weui-form-preview-value" ng-bind="info.age"></span>
+            </p>
+            <p>
+                <label class="weui-form-preview-label">身高</label>
+                <span class="weui-form-preview-value" ng-bind="info.height"></span>
+            </p>
+            <p>
+                <label class="weui-form-preview-label">职业</label>
+                <span class="weui-form-preview-value" ng-bind="info.job"></span>
+            </p>
+            <p>
+                <label class="weui-form-preview-label">梦想</label>
+                <span class="weui-form-preview-value" ng-bind="info.dream"></span>
+            </p>
+            <p>
+                <label class="weui-form-preview-label">个人简介</label>
+                <span class="weui-form-preview-value" ng-bind="info.family"></span>
+            </p>
+        </div>
+    </div>
+
+
+    <div    class="weui_cells_title">选手支持统计</div>
+    <div class="weui_grids grids-small"  >
+        <a href="javascript:;" class="grid"  >
+            <div class="weui_grid_icon">
+                <img src="img/heart.png" alt="">
+            </div>
+            <p class="weui_grid_label" ng-bind="count1"></p>
+        </a>
+        <a href="javascript:;" class="grid" >
+            <div class="weui_grid_icon">
+                <img src="img/crown_royal.png" alt="">
+            </div>
+            <p class="weui_grid_label" ng-bind="count2"></p>
+        </a>
+        <a href="javascript:;" class="grid"  >
+            <div class="weui_grid_icon">
+                <img src="img/lip04.png" alt="">
+            </div>
+            <p class="weui_grid_label" ng-bind="count3"></p>
+        </a>
+        <a href="javascript:;" class="grid" >
+            <div class="weui_grid_icon">
+                <img src="img/flower.png" alt="">
+            </div>
+            <p class="weui_grid_label" ng-bind="count4"></p>
+        </a>
+    </div>
+
+    <div class="page-hd">
+        <p class="page-hd-desc"></p>
+    </div>
+    <div class="page-bd-15">
+        <div class="weui-share" onclick="$(this).fadeOut();$(this).removeClass('fadeOut')">
+            <div class="weui-share-box">
+                点击右上角发送给指定朋友或分享到朋友圈 <i></i>
+            </div>
+        </div>
+    </div>
+
+
+
+        <div class="weui_cells_title">支持</div>
+    <div class="weui_btn_area weui_btn_area_inline">
+        <a href="javascript:;" class="weui_btn weui_btn_plain_primary" ng-click="support()">投票支持</a>
+        <a href="javascript:;" class="weui_btn weui_btn_plain_primary" onclick="$('.weui-share').show().addClass('fadeIn')">转发支持</a>
+    </div>
+    <div class="weui_cells_title">送礼物</div>
+    <div class="weui_cells weui_cells_form ">
+
+        <div class="weui_cell">
+            <div class="weui_cell_bd weui_cell_primary"> <p><!--<img class="people_img" src="img/crown_royal.png">-->皇冠(30票)</p> </div>
+            <div style="font-size: 0px;" class="weui_cell_ft" ng-init="crownCount = 0">
+                <a class="weui-number weui-number-sub needsclick">-</a>
+                <input pattern="[0-9]*" class="weui-number-input" style="width: 50px;" ng-model="crownCount"  data-min="0" data-max="100" data-step="1">
+                <a class="weui-number weui-number-plus needsclick">+</a>
+            </div>
+            <div class="weui_cell_ft" style="display: none;"> 0 </div>
+        </div>
+        <div class="weui_cell">
+            <div class="weui_cell_bd weui_cell_primary"> <p><!--<img class="people_img" src="img/lip04.png">-->香吻(10票)</p> </div>
+            <div style="font-size: 0px;" class="weui_cell_ft" ng-init="kissCount = 0">
+                <a class="weui-number weui-number-sub needsclick">-</a>
+                <input pattern="[0-9]*" class="weui-number-input" style="width: 50px;"  ng-model="kissCount"  data-min="0" data-max="100" data-step="1">
+                <a class="weui-number weui-number-plus needsclick">+</a>
+            </div>
+            <div class="weui_cell_ft" style="display: none;"> 0 </div>
+        </div>
+        <div class="weui_cell">
+            <div class="weui_cell_bd weui_cell_primary"> <p><!--<img class="people_img" src="img/flower.png">-->鲜花( 5票)</p> </div>
+            <div style="font-size: 0px;" class="weui_cell_ft">
+                <a class="weui-number weui-number-sub needsclick">-</a>
+                <input pattern="[0-9]*" class="weui-number-input" style="width: 50px;" ng-init="flowerCount = 0" ng-model="flowerCount"  data-min="0" data-max="100" data-step="1">
+                <a class="weui-number weui-number-plus needsclick">+</a>
+            </div>
+            <div class="weui_cell_ft" style="display: none;"> 0 </div>
+        </div>
+
+        <div class="button_sp_area" ng-click = "present()">
+            <a href="javascript:;" class="weui_btn weui_btn_plain_primary" >确认支持</a>
+        </div>
+    </div>
+
+    <div class="weui_cells_title">照片展示</div>
+    <div ng-repeat="pic in pics">
+        <img class="showImg" src="{{pic.imageurl}}" class="img-border img-max img-radius" alt="">
+    </div>
+
+
+    <div class="weui_cells_title" >支持记录</div>
+        <ul class="weui-comment remark" infinite-scroll='classifyList.nextPage()' infinite-scroll-disabled='classifyList.busy' infinite-scroll-distance='0'>
+            <li class="weui-comment-item" ng-repeat="remark in classifyList.items">
+                <div class="userinfo">
+                    <strong class="nickname" ng-bind="remark.username"></strong>
+                    <ul>
+                        <li class="weui_uploader_file avatar width35" style="background-image:url({{remark.headimg}})"></li>
+                    </ul>
+                </div>
+                <div class="weui-comment-msg">
+                    <span class="status">{{remark | presentFormat}}</span>
+                </div>
+                <p class="time" ng-bind="remark.time"></p>
+            </li>
+        </ul>
+        <div class="loading" ng-show="classify.busy">
+             <img src="img/loading.gif"/> 
+                加载中...
+        </div>
+</body>
+</html>

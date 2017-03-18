@@ -1,0 +1,108 @@
+<layout name="layout" />
+
+<!--main-container-part-->
+<div id="content">
+    <!--breadcrumbs-->
+    <div id="content-header">
+        <div id="breadcrumb"> <a href="#" class="tip-bottom"><i class="icon-home"></i> 赛区管理</a></div>
+    </div>
+    <!--End-breadcrumbs-->
+
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span12">
+                <a  data-toggle='modal' data-target='#myModal' class="btn btn-primary"> + 添加</a>
+                <div class="widget-box">
+                    <div class="widget-content nopadding">
+                        <table class="table table-bordered data-table">
+                            <thead>
+                            <tr>
+                                <th width="15%">编号</th>
+                                <th>赛区名称</th>
+                                <th width="20%">操作</th>
+                            </tr>
+                            </thead>
+                            <tbody id="loca_content">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <!--添加新赛区的模态框  start-->
+    <div class="modal hide fade" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-header"><button class="close" type="button" data-dismiss="modal">×</button>
+            <h3 id="myModalLabel">添加赛区</h3>
+        </div>
+        <div class="modal-body" >
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span12">
+                        <div class="widget-box">
+                            <div class="widget-content nopadding">
+                                <form id="carousel">
+                                    <table class="table table-bordered data-table">
+                                        <tr>
+                                            <td>赛区名称:</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" id="location_name" name="name"></td>
+                                        </tr>
+                                    </table>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="javascript:add();" class="btn btn-success">添加</a>
+            <a href="#" class="btn" data-dismiss="modal">关闭</a>
+        </div>
+    </div>
+    <!--添加新赛区的模态框  end-->
+
+    <!-- Modal -->
+    <!--修改新赛区的模态框  start-->
+    <div class="modal hide fade" id="myModalupdate" tabindex="-1" role="dialog">
+        <div class="modal-header"><button class="close" type="button" data-dismiss="modal">×</button>
+            <h3 id="myModalLabelupdate">修改赛区</h3>
+        </div>
+        <div class="modal-body" >
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span12">
+                        <div class="widget-box">
+                            <div class="widget-content nopadding">
+                                <form>
+                                    <input type="hidden" id="lid"/>
+                                    <table class="table table-bordered data-table">
+                                        <tr>
+                                            <td>修改赛区名称为:</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" id="newlocation_name" name="name"></td>
+                                        </tr>
+                                    </table>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="javascript:update();" class="btn btn-success">添加</a>
+            <a href="#" class="btn" data-dismiss="modal">关闭</a>
+        </div>
+    </div>
+    <!--修改新赛区的模态框  end-->
+
+</div>
+
+<script type="text/javascript" src="__PUBLIC__/Admin/script/location.js"></script>

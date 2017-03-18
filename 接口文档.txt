@@ -1,0 +1,339 @@
+微信登录接口
+请求地址:
+http://127.0.0.1/vote/index.php/Home/Index/login
+传递参数code(传递方式为get)
+返回结果:
+{'serviceResult':1,"resultinfo":"success"}
+或者
+{'serviceResult':0,"resultinfo":"登录失败,请重试"}
+==================================================================
+首页
+请求地址:
+http://127.0.0.1/vote/index.php/Home/Index/index
+返回结果:
+{
+  "serviceResult": 1,
+  "resultinfo": {
+    "carouseldata": [
+      {
+        "cid": "1",
+        "picurl": "carousel/2017-02-23/58ae4bc3300a6.jpg"
+      },
+      {
+        "cid": "2",
+        "picurl": "carousel/2017-02-23/58ae4bce364c5.jpg"
+      },
+      {
+        "cid": "3",
+        "picurl": "carousel/2017-02-23/58ae4bdad3f20.jpg"
+      }
+    ],
+    "infodata": [
+      {
+        "iid": "1",
+        "title": "大赛简介",
+        "content": "<p>三个图合同发生的理发师干撒的高速高是读后感阿萨德刚我哈三等功赛读后感&nbsp;</p>"
+      },
+      {
+        "iid": "2",
+        "title": "大赛奖励",
+        "content": "<p>大赛奖励</p>"
+      },
+      {
+        "iid": "3",
+        "title": "报名细则",
+        "content": "<p>报名规则</p>"
+      }
+    ]
+  }
+}
+说明:
+carouseldata是轮播图数据
+infodata是大赛信息
+==================================================================
+根据id获得轮播图的详情
+请求地址:
+http://127.0.0.1/vote/index.php/Home/Carousel/detail
+请求方式:post
+请求参数:
+cid:轮播图的id
+返回结果:
+{
+  "serviceResult": 1,
+  "resultinfo": {
+    "content": "<p>测试1</p>"
+  }
+}
+==================================================================
+获得全部赛区
+请求地址:
+http://127.0.0.1/vote/index.php/Home/Competitor/getlocation
+返回结果:
+{
+  "serviceResult": 1,
+  "resultinfo": [
+    {
+      "lid": "2",
+      "name": "冲绳"
+    }
+  ]
+}
+==================================================================
+选手报名
+请求地址:
+http://127.0.0.1/vote/index.php/Home/Competitor/enroll
+请求方式:post
+请求参数:
+name  '姓名',
+age  '年龄',
+height  '身高(单位是厘米)',
+weight '体重(单位是千克)',
+job  '职业',
+dream  '梦想',
+family  '家庭简介',
+location  '所处赛区',
+telphone  '手机号码',
+email '电子邮箱',
+hobby '爱好',
+返回结果
+{'serviceResult':1,"resultinfo":"success"}
+或者
+{'serviceResult':0,"resultinfo":"失败原因"}
+==================================================================
+选手风采页面
+请求地址
+http://127.0.0.1/vote/index.php/Home/Competitor/mien
+请求方式:post
+(如果要查询)请求参数:
+cid:赛区的id
+name:选手名称
+p:当前页数
+返回结果:
+{
+  "serviceResult": 1,
+  "resultinfo": {
+    "count": "2",
+    "pagecount": 1,
+    "currentpage": 1,
+    "data": [
+      {
+        "cid": "2",
+        "name": "gakki2",
+        "age": "12",
+        "height": "170",
+        "weight": "60",
+        "job": "haha",
+        "dream": "hehe",
+        "family": "gaga",
+        "location": "1",
+        "telphone": "13420153445",
+        "email": "542523102@qq.com",
+        "hobby": "gege",
+        "is_pass": "1",
+        "is_delete": "0"
+      },
+      {
+        "cid": "1",
+        "name": "gakki",
+        "age": "12",
+        "height": "170",
+        "weight": "60",
+        "job": "haha",
+        "dream": "hehe",
+        "family": "gaga",
+        "location": "1",
+        "telphone": "13420153445",
+        "email": "542523102@qq.com",
+        "hobby": "gege",
+        "is_pass": "1",
+        "is_delete": "0"
+      }
+    ]
+  }
+}
+===================================================================
+选手详情页面
+请求链接:
+http://127.0.0.1/vote/index.php/Home/Competitor/detail
+请求方式:post
+请求参数:
+cid:选手的id
+返回参数:
+{
+  "serviceResult": 1,
+  "resultinfo": {
+    "cid": "1",
+    "name": "gakki",
+    "age": "12",
+    "height": "170",
+    "weight": "60",
+    "job": "haha",
+    "dream": "hehe",
+    "family": "gaga",
+    "location": "1",
+    "telphone": "13420153445",
+    "email": "542523102@qq.com",
+    "hobby": "gege",
+    "is_pass": "1",
+    "is_delete": "0"
+  }
+}
+
+//缺一个票数
+===================================================================
+选手支持统计
+请求地址:
+http://127.0.0.1/vote/index.php/Home/Competitor/count
+请求方式:post
+请求参数:
+cid:选手的id
+返回值:
+{
+  "serviceResult": 1,
+  "resultinfo": [
+    {
+      "cid": "2",
+      "competitor": "1",
+      "present": "1",
+      "count": "6"
+    }
+  ]
+}
+说明:
+present:表示礼物的类型
+count:总数
+===================================================================
+支持选手
+请求地址(投票):
+http://127.0.0.1/vote/index.php/Home/Competitor/support
+请求方式:post
+请求参数:
+cid:要支持的选手id
+返回结果
+{'serviceResult':1,"resultinfo":"success"}
+或者
+{'serviceResult':0,"resultinfo":"失败原因"}
+===================================================================
+选手图片展示
+请求地址:
+http://127.0.0.1/vote/index.php/Home/Competitor/show
+请求方式:post
+请求参数:
+cid:选手的id
+返回的结果:
+{
+  "serviceResult": 1,
+  "resultinfo": [
+    {
+      "imageurl": "http://summer.tunnel.qydev.com/vote/wximages/1488892762128.jpeg"
+    },
+    {
+      "imageurl": "http://summer.tunnel.qydev.com/vote/wximages/1488892765601.json"
+    },
+    {
+      "imageurl": "http://summer.tunnel.qydev.com/vote/wximages/1488892766572.jpeg"
+    },
+    {
+      "imageurl": "http://summer.tunnel.qydev.com/vote/wximages/1488892766275.jpeg"
+    }
+  ]
+}
+===================================================================
+某选手的支持记录
+请求地址:
+http://127.0.0.1/vote/index.php/Home/Competitor/record
+请求方式:post
+请求参数:
+cid:选手的id
+p:当前页数
+返回值:
+{
+  "serviceResult": 1,
+  "resultinfo": {
+    "count": "6",
+    "pagecount": 1,
+    "currentpage": 1,
+    "data": [
+      {
+        "headimg": "http://wx.qlogo.cn/mmopen/1YhsubvT5mM5icGr9PjfxJDcqTMLY3WtkhiaicRakay6wGStdofq3aL8g2p4GW8bwdf8Y7DvFn",
+        "username": "罗楚洲",
+        "name": "投票支持",
+        "time": "2017-02-25"
+      },
+      {
+        "headimg": "http://wx.qlogo.cn/mmopen/1YhsubvT5mM5icGr9PjfxJDcqTMLY3WtkhiaicRakay6wGStdofq3aL8g2p4GW8bwdf8Y7DvFn",
+        "username": "罗楚洲",
+        "name": "投票支持",
+        "time": "2017-02-25"
+      },
+      {
+        "headimg": "http://wx.qlogo.cn/mmopen/1YhsubvT5mM5icGr9PjfxJDcqTMLY3WtkhiaicRakay6wGStdofq3aL8g2p4GW8bwdf8Y7DvFn",
+        "username": "罗楚洲",
+        "name": "投票支持",
+        "time": "2017-02-25"
+      },
+      {
+        "headimg": "http://wx.qlogo.cn/mmopen/1YhsubvT5mM5icGr9PjfxJDcqTMLY3WtkhiaicRakay6wGStdofq3aL8g2p4GW8bwdf8Y7DvFn",
+        "username": "罗楚洲",
+        "name": "投票支持",
+        "time": "2017-02-25"
+      },
+      {
+        "headimg": "http://wx.qlogo.cn/mmopen/1YhsubvT5mM5icGr9PjfxJDcqTMLY3WtkhiaicRakay6wGStdofq3aL8g2p4GW8bwdf8Y7DvFn",
+        "username": "罗楚洲",
+        "name": "投票支持",
+        "time": "2017-02-25"
+      },
+      {
+        "headimg": "http://wx.qlogo.cn/mmopen/1YhsubvT5mM5icGr9PjfxJDcqTMLY3WtkhiaicRakay6wGStdofq3aL8g2p4GW8bwdf8Y7DvFn",
+        "username": "罗楚洲",
+        "name": "投票支持",
+        "time": "2017-02-25"
+      }
+    ]
+  }
+}
+===================================================================
+选手排行榜
+请求地址:
+http://127.0.0.1/vote/index.php/Home/Competitor/ranking_list
+请求方式:post
+请求参数:
+p:当前页数
+lid:赛区id
+返回值:
+{
+  "serviceResult": 1,
+  "resultinfo": {
+    "count": "2",
+    "pagecount": 1,
+    "currentpage": 1,
+    "data": [
+      {
+        "cid": "1",
+        "name": "gakki1",
+        "present": "2,1",   
+        "count": "2,6"
+      },
+      {
+        "cid": "2",
+        "name": "gakki2",
+        "present": null,
+        "count": null
+      }
+    ]
+  }
+}
+说明:
+present字段的内容和count字段的内容一一对应
+===================================================================
+
+
+url:http://127.0.0.1/vote/index.php/Home/Index/show
+
+
+ "1,5,3"
+ "20,3,7"
+
+
+

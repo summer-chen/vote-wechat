@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选手风采</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+
+</head>
+<style>
+    .layui-m-layershade {
+        background-color: rgba(255, 255, 255, 1) !important;
+    }
+    .layui-m-layer2 .layui-m-layercont i{
+        background-color: #000!important;
+    }
+
+    .layui-m-layer2 .layui-m-layerchild{
+        color: #000!important;
+    }
+</style>
+<body>
+
+<div class="weui_panel weui_panel_access" >
+
+    <!--<div class="">
+        <div class="weui_search_bar">
+            <input type="search" class="search-input" id='search' placeholder='关键字' style="box-sizing:content-box"/>
+            <button  class="weui_btn weui_btn_mini weui_btn_primary"><i class="icon icon-4"></i></button>
+        </div>
+
+    </div>-->
+
+
+        <div class="weui_cell weui_cell_select weui_select_after weui_cell_select1">
+            <div class="weui_cell_hd">
+                <label class="weui_label">选择赛区</label>
+            </div>
+            <div class="weui_cell_bd weui_cell_primary">
+                <select class="weui_select" name="select2" ng-model="showLocation" ng-change="getInfo(showLocation)">
+                    <option ng-repeat="location in locations" value="{{location.lid}}" >{{location.name}}</option>
+                </select>
+            </div>
+        </div>
+
+    <div class="wrapper" infinite-scroll='classifyList.nextPage()' infinite-scroll-disabled='classifyList.busy' infinite-scroll-distance='0'>
+        <ul class="wall" >
+            <li class="article wall-colunm" ng-repeat="info in classifyList.items">
+                <a href="index.html#/people/{{info.cid}}">
+                    <div style="text-align: center">
+                        <div class="weui_uploader_file" style="background-image:url({{info.imageurl}})"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <p class="showName">{{info.name}}</p>
+                    <small class="showCount">{{info.count | zero}}票</small>
+                    <input type="button" value="投票" />
+                </a>
+            </li>
+        </ul>
+        <div class="loading" ng-show="classifyList.busy">
+             <img src="img/loading.gif"/> 
+                加载中...
+        </div>
+    </div>
+    <div class="clear"></div>
+
+
+</div>
+</body>
+</html>

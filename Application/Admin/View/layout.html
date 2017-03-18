@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>后台管理界面</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/fullcalendar.css" />
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/matrix-style.css" />
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/matrix-media.css" />
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/jquery.gritter.css" />
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/cypager.min.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/uploadPic.css"/>
+    <script src="__PUBLIC__/Admin/js/jquery.min.js"></script>
+    <script src="__PUBLIC__/Admin/layer/layer/layer.js"></script>
+
+    <script type="text/javascript">
+        var baseUrl = "/vote/";
+    </script>
+</head>
+<body>
+
+<!--Header-part-->
+<div id="header">
+    <h1><a href="dashboard.html">Matrix Admin</a></h1>
+</div>
+<!--close-Header-part-->
+
+
+<!--top-Header-menu-->
+<div id="user-nav" class="navbar navbar-inverse">
+    <ul class="nav">
+        <li class=""><a title="退出登录" href="<?php echo U('Login/logout'); ?>"><i class="icon icon-share-alt"></i> <span class="text">退出</span></a></li>
+    </ul>
+</div>
+<!--close-top-Header-menu-->
+
+<!--<div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >免费模板</a></div>-->
+<!--sidebar-menu-->
+<div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i> Dashboard</a>
+    <ul>
+        <li><a href="<?php echo U('Carousel/add'); ?>"><i class="icon icon-signal"></i> <span>添加轮播图</span></a> </li>
+        <li><a href="<?php echo U('Carousel/lst'); ?>"><i class="icon icon-signal"></i> <span>轮播图列表</span></a> </li>
+        <li><a href="<?php echo U('Info/info'); ?>"><i class="icon icon-signal"></i> <span>大赛信息</span></a> </li>
+        <li><a href="<?php echo U('Location/lst'); ?>"><i class="icon icon-inbox"></i> <span>赛区管理</span></a> </li>
+        <li><a href="<?php echo U('Competitor/lst'); ?>"><i class="icon icon-th"></i> <span>选手审核</span></a></li>
+        <li><a href="<?php echo U('Competitor/pass'); ?>"><i class="icon icon-th"></i> <span>支持记录</span></a></li>
+    </ul>
+</div>
+<!--sidebar-menu-->
+
+{__CONTENT__}
+
+<!--end-main-container-part-->
+
+<!--Footer-part-->
+
+<div class="row-fluid">
+    <div id="footer" class="span12"> 2013 &copy; Matrix Admin. More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a> </div>
+</div>
+
+<!--end-Footer-part-->
+
+<script src="__PUBLIC__/Admin/js/excanvas.min.js"></script>
+<script src="__PUBLIC__/Admin/js/jquery.ui.custom.js"></script>
+<script src="__PUBLIC__/Admin/js/bootstrap.min.js"></script>
+<script src="__PUBLIC__/Admin/js/jquery.flot.min.js"></script>
+<script src="__PUBLIC__/Admin/js/jquery.flot.resize.min.js"></script>
+<script src="__PUBLIC__/Admin/js/jquery.peity.min.js"></script>
+<script src="__PUBLIC__/Admin/js/fullcalendar.min.js"></script>
+<script src="__PUBLIC__/Admin/js/matrix.js"></script>
+<script src="__PUBLIC__/Admin/js/matrix.dashboard.js"></script>
+<script src="__PUBLIC__/Admin/js/jquery.gritter.min.js"></script>
+<script src="__PUBLIC__/Admin/js/matrix.interface.js"></script>
+<script src="__PUBLIC__/Admin/js/matrix.chat.js"></script>
+<script src="__PUBLIC__/Admin/js/jquery.validate.js"></script>
+<script src="__PUBLIC__/Admin/js/matrix.form_validation.js"></script>
+<script src="__PUBLIC__/Admin/js/jquery.wizard.js"></script>
+<script src="__PUBLIC__/Admin/js/jquery.uniform.js"></script>
+<script src="__PUBLIC__/Admin/js/select2.min.js"></script>
+<script src="__PUBLIC__/Admin/js/matrix.popover.js"></script>
+<script src="__PUBLIC__/Admin/js/jquery.dataTables.min.js"></script>
+<script src="__PUBLIC__/Admin/js/matrix.tables.js"></script>
+</body>
+</html>

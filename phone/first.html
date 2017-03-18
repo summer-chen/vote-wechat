@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/swiper.js"></script>
+</head>
+<body>
+
+<!--轮播开始-->
+<div class="swiper-container">
+
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" ng-repeat="carousel in carouseldata">
+            <a href="#/first/{{carousel.cid}}">
+                <img src="{{carousel.picurl | picurlFormat}}" alt="" style="width: 100%">
+            </a>
+
+        </div>
+    </div>
+
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination" style="font-size: 20px"></div>
+</div>
+
+<!--轮播结束-->
+
+
+
+
+
+<!--富文本开始-->
+<div class="page-bd">
+    <div class="weui-loadmore weui-loadmore-line">
+        <span class="weui-loadmore-tips">大赛简介</span>
+        <div class="textContent" ng-bind-html="textContent1">
+        </div>
+    </div>
+
+    <div class="weui-loadmore weui-loadmore-line">
+        <span class="weui-loadmore-tips">大赛奖励</span>
+        <div class="textContent" ng-bind-html="textContent2">
+        </div>
+    </div>
+
+    <div class="weui-loadmore weui-loadmore-line">
+        <span class="weui-loadmore-tips">报名细则 </span>
+        <div class="textContent" ng-bind-html="textContent3">
+        </div>
+    </div>
+
+
+
+    <div class="weui_article"></div>
+</div>
+
+
+<!--富文本结束
+-->
+
+<script>//轮播设置
+
+</script>
+
+</body>
+</html>
